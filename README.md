@@ -34,7 +34,7 @@ As funcionalidades disponíveis estão listadas abaixo:
 
 ### 📸 Prévia
 <div align="center">
-  <img src="./imagens/programacao-concorrente-preview.jpeg" width="500" height="500">
+  <img src="./imagens/programacao-concorrente-preview.png" width="500" height="500">
 </div>
 
 ## ⚙️ Construção
