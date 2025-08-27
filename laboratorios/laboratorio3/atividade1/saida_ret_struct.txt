@@ -1,0 +1,9 @@
+Criacao da thread 0
+Criacao da thread 1
+Criacao da thread 2
+Criacao da thread 3
+A thread 0 retornou 0
+A thread 1 retornou 2
+A thread 2 retornou 4
+A thread 3 retornou 6
+Thread principal terminou

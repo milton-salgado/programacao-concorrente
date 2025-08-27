@@ -1,0 +1,9 @@
+Criando diretorios...
+Estrutura criada!
+=== ANALISE DE VARIACAO RELATIVA ===
+Testando diferentes dimensoes...
+Dimensao    Sequencial    2 Threads     4 Threads     8 Threads
+==============================================================
+  100000      0.000000      0.000000      0.000000      0.000000    
+  500000      0.000000     -0.000000     -0.000000     -0.000000    
+ 1000000      0.000000      0.000000      0.000000      0.000000    

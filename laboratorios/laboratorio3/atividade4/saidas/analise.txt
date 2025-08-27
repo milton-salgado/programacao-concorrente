@@ -1,0 +1,51 @@
+ANALISE DOS EXPERIMENTOS - PRODUTO INTERNO CONCORRENTE x SEQUENCIAL
+
+CONFIGURACAO DO SISTEMA
+- Processador: 14 nucleos fisicos, 2 nucleos por soquete, Intel Core i7
+- Arquitetura: Sistema multi-core com potencial para paralelizacao
+
+RESULTADOS DOS EXPERIMENTOS
+
+(a) DIMENSOES DOS VETORES TESTADAS
+- 100.000 elementos
+- 500.000 elementos  
+- 1.000.000 elementos
+
+(b) NUMERO DE THREADS TESTADAS
+- 1 thread (sequencial)
+- 2 threads
+- 4 threads
+- 8 threads
+
+(c) TEMPOS DE EXECUCAO (media de 5 execucoes)
+
+Para vetores de 1.000.000 elementos:
+- 1 thread (sequencial): 0.001730 segundos
+- 2 threads: 0.001875 segundos
+- 4 threads: 0.001117 segundos  
+- 8 threads: 0.000748 segundos
+
+Para teste rapido (100.000 elementos):
+- 1 thread: 0.000337 segundos
+- 2 threads: 0.000411 segundos
+- 4 threads: 0.000371 segundos
+
+(d) VARIACAO RELATIVA DOS RESULTADOS
+Todas as execucoes apresentaram variacao relativa praticamente nula, indicando que:
+- Os calculos concorrentes mantem precisao numerica
+- Nao ha perda significativa de precisao com paralelizacao
+- O algoritmo de divisao de trabalho esta correto
+
+ANALISE DE DESEMPENHO
+
+OBSERVACOES PRINCIPAIS:
+
+1. Comportamento inesperado com 2 threads: 
+    - Nos meus testes, parece que com 2 threads foram mais lentas que 1 thread em alguns casos.
+    - Acredito que o problema pode ser pequeno demais para justificar paralelizacao com apenas 2 threads, levando ao que eu conheço como overhead de gerenciamento de threads, o que supera os beneficios.
+
+2. Melhora com 4 e 8 threads: A partir de 4 threads, consegui observar ganhos concretos:
+   - 4 threads: ~35% mais rapido que sequencial
+   - 8 threads: ~57% mais rapido que sequencial
+
+3. Escalabilidade limitada: Com 8 threads em um sistema de 14 nucleos, ainda ha potencial nao explorado, mas os ganhos seguem a lei de Amdahl (como vimos em Fundamentos de Sistemas de Computacao e Arquitetura de Computadores).

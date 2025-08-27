@@ -1,0 +1,18 @@
+gcc -Wall -o gera_vetores_produto gera_vetores_produto.c
+gcc -Wall -o produto_interno_sequencial produto_interno_sequencial.c
+gcc -Wall -o produto_interno_concorrente produto_interno_concorrente.c -lpthread
+Criando diretorios...
+Estrutura criada!
+=== TESTE RAPIDO - PRODUTO INTERNO ===
+Gerando vetores de teste (100.000 elementos)...
+Arquivo gerado com sucesso
+
+Dimensao    Threads    Tempo(s)    Produto_Calc    Produto_Orig    Var_Relativa
+==========================================================================
+Testando versao sequencial...
+100000	1	0.000338	3341301572.470488	3341301572.470488	0.000000
+Testando com 2 threads...
+100000	2	0.000436	3341301572.470489	3341301572.470488	0.000000
+Testando com 4 threads...
+100000	4	0.000366	3341301572.470489	3341301572.470488	0.000000
+Teste concluido!
