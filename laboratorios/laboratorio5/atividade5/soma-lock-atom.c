@@ -11,7 +11,7 @@ int multiplo_encontrado = 0; //flag para indicar se um multiplo de 1000 foi enco
 int multiplo_impresso = 0; //flag para indicar se o multiplo foi impresso
 
 //funcao executada pelas threads
-void *ExecutaTarefa(void *arg) {
+void *executa_tarefa(void *arg) {
     long int id = (long int) arg;
     printf("Thread : %ld esta executando...\n", id);
 
@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
 
     //--cria as threads trabalhadoras
     for (long int t = 0; t < nthreads; t++) {
-        if (pthread_create(&tid[t], NULL, ExecutaTarefa, (void *) t)) {
+        if (pthread_create(&tid[t], NULL, executa_tarefa, (void *) t)) {
             printf("--ERRO: pthread_create()\n"); exit(-1);
         }
     }
