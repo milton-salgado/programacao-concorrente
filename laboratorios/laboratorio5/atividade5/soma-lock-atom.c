@@ -71,7 +71,6 @@ void *extra(void *args) {
             break;
         }
 
-
         pthread_mutex_unlock(&mutex);
     }
 
