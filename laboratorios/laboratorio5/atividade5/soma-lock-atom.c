@@ -10,6 +10,9 @@ pthread_cond_t cond_impresso; //variavel condicional para sinalizar que foi impr
 int multiplo_encontrado = 0; //flag para indicar se um multiplo de 1000 foi encontrado
 int multiplo_impresso = 0; //flag para indicar se o multiplo foi impresso
 
+void *executa_tarefa(void *arg);
+void *extra(void *args);
+
 //funcao executada pelas threads
 void *executa_tarefa(void *arg) {
     long int id = (long int) arg;
