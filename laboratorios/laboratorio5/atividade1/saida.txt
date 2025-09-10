@@ -1,0 +1,21 @@
+Thread 0: passo=0
+Thread 1: passo=0
+Thread 2: passo=0
+Thread 3: passo=0
+Thread 4: passo=0
+Thread 4: passo=1
+Thread 2: passo=1
+Thread 0: passo=1
+Thread 1: passo=1
+Thread 3: passo=1
+Thread 3: passo=2
+Thread 4: passo=2
+Thread 1: passo=2
+Thread 2: passo=2
+Thread 0: passo=2
+Thread 0: passo=3
+Thread 1: passo=3
+Thread 4: passo=3
+Thread 2: passo=3
+Thread 3: passo=3
+FIM.

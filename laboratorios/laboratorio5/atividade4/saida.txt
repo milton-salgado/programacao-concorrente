@@ -1,0 +1,11 @@
+A: Comecei
+HELLO
+A: Comecei
+HELLO
+A:  estado = 2, vai sinalizar a condicao 
+B: Comecei
+BYEBYE
+B: Comecei
+BYEBYE
+
+FIM

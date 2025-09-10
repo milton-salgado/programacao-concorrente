@@ -1,0 +1,7 @@
+A: Comecei
+HELLO
+A: vai sinalizar a condicao 
+B: Comecei
+BYEBYE
+
+FIM
