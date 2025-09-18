@@ -1,0 +1,4 @@
+Vetor antes do incremento: 0 1 2 3 4 5 6 7 
+Vetor apos o incremento: 1 2 3 4 5 6 7 8 
+--Sucesso no processamento do vetor.
+Tempo: 0.000253

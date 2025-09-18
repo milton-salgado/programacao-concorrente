@@ -1,0 +1,2 @@
+Vetor antes do incremento: 75 6 49 78 92 69 79 45 
+Vetor apos o incremento: 76 7 50 79 93 70 80 46 

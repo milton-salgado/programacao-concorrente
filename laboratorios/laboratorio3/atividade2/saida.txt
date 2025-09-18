@@ -1,0 +1,25 @@
+Criacao da thread 0
+Criacao da thread 1
+Criacao da thread 2
+Criacao da thread 3
+Criacao da thread 4
+Criacao da thread 5
+Criacao da thread 6
+Criacao da thread 7
+A thread 0 retornou soma local: -536.66693115234375000000000000
+A thread 1 retornou soma local: 96.00038909912109375000000000
+A thread 2 retornou soma local: -213.66659545898437500000000000
+A thread 3 retornou soma local: 86.66670227050781250000000000
+A thread 4 retornou soma local: 438.66662597656250000000000000
+A thread 5 retornou soma local: -238.33334350585937500000000000
+A thread 6 retornou soma local: -1939.99951171875000000000000000
+A thread 7 retornou soma local: -467.33386230468750000000000000
+
+soma_sequencial (invertida)     = -2774.66137695312500000000000000
+
+soma_sequencial_blocos (2 blocos) = -2774.66601562500000000000000000
+
+soma_concorrente                = -2774.66650390625000000000000000
+
+Soma original                   = -2774.66679546236991882324218750
+Thread principal terminou

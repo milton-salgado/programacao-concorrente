@@ -64,9 +64,30 @@ void *B(void *t) {
 int main(int argc, char *argv[]) {
     pthread_t threads[NTHREADS];
 
+    if (argc < 2) {
+        printf()
+            return 1;
+    }
+
+    num_threads = atoi(argv[1]);
+    pthread_t *threads = (pthread_t *) calloc(num_threads, sizeof(pthread_t));
+
+
+
+
+
     /* Inicializa o mutex (lock de exclusao mutua) e a variavel de condicao */
     pthread_mutex_init(&mutex, NULL);
     pthread_cond_init(&cond, NULL);
+
+    for (int i = 0; i < num_threads; i++) {
+        argsThread *arg_thread = malloc(sizeof argsThread)
+
+            // preencher 
+
+
+            if (pthread_create(&threads[i], NULL, A, void *(args_thread)))
+    }
 
     /* Cria as threads */
     pthread_create(&threads[0], NULL, A, NULL);

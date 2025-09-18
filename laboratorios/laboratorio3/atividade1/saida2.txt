@@ -1,0 +1,3 @@
+Thread 0 retornou 0.
+Thread 1 retornou 2.
+--Thread principal terminou.

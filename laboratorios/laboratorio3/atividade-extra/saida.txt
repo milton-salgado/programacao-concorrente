@@ -1,0 +1,4 @@
+--LOG: Vetor: 0 1 2 3 
+--LOG: Vetor: 0 1 2 3 
+--LOG: Produto total concorrente: 14
+--LOG: Produto total sequencial: 14

@@ -1,75 +1,61 @@
-/* Disciplina: Programacao Concorrente */
-/* Prof.: Silvana Rossetto */
-/* Laboratório: 5 */
-/* Codigo: Uso de variáveis de condição e suas operações básicas para sincronização por condição */
-
-/***** Condicao logica da aplicacao: a cada iteracao, as threads incrementam seu contador, imprimem o valor atual, e só podem continuar depois que todas as threads completaram o passo. Apos PASSOS passos, as threads terminam  ****/
-
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NTHREADS  5
-#define PASSOS  4
+#define NUM_THREADS 5
+#define PASSOS 4
 
-/* Variaveis globais */
 pthread_mutex_t mutex;
 pthread_cond_t cond;
 
-//funcao barreira
-void barreira(int nthreads) {
+void barreira(int num_threads) {
     static int bloqueadas = 0;
-    pthread_mutex_lock(&mutex); //inicio secao critica
-    if (bloqueadas == (nthreads - 1)) {
-        //ultima thread a chegar na barreira
+
+    pthread_mutex_lock(&mutex);
+    if (bloqueadas == (num_threads - 1)) {
         pthread_cond_broadcast(&cond);
         bloqueadas = 0;
     } else {
         bloqueadas++;
         pthread_cond_wait(&cond, &mutex);
     }
-    pthread_mutex_unlock(&mutex); //fim secao critica
+    pthread_mutex_unlock(&mutex);
 }
 
-//funcao das threads
 void *A(void *t) {
-    int my_id = *(int *) t, i;
+    int meu_id = *(int *) t;
     int boba1, boba2;
 
-    for (i = 0; i < PASSOS; i++) {
-        printf("Thread %d: passo=%d\n", my_id, i);
+    for (long int i = 0; i < PASSOS; i++) {
+        printf("--LOG: Thread %d: passo=%ld\n", meu_id, i);
+        barreira(NUM_THREADS);
 
-        //sincronizacao condicional
-        barreira(NTHREADS); //se comentar essa linha, o requisito lógico deixa de ser necessariamente atendido
-
-        /* simula uma computacao qualquer para consumir tempo... */
-        boba1 = 100; boba2 = -100; while (boba2 < boba1) boba2++;
+        // ? processamento qualquer
+        boba1 = 100; boba2 = -100;
+        while (boba2 < boba1)
+            boba2++;
     }
+
     pthread_exit(NULL);
 }
 
-/* Funcao principal */
 int main(int argc, char *argv[]) {
-    pthread_t threads[NTHREADS];
-    int id[NTHREADS];
+    pthread_t tid[NUM_THREADS];
+    int id[NUM_THREADS];
 
-    /* Inicilaiza o mutex (lock de exclusao mutua) e a variavel de condicao */
     pthread_mutex_init(&mutex, NULL);
     pthread_cond_init(&cond, NULL);
 
-    /* Cria as threads */
-    for (int i = 0;i < NTHREADS;i++) {
+    for (long i = 0; i < NUM_THREADS; i++) {
         id[i] = i;
-        pthread_create(&threads[i], NULL, A, (void *) &id[i]);
+        pthread_create(&tid[i], NULL, A, (void *) &id[i]);
     }
 
-    /* Espera todas as threads completarem */
-    for (int i = 0; i < NTHREADS; i++) {
-        pthread_join(threads[i], NULL);
-    }
-    printf("FIM.\n");
+    for (int i = 0; i < NUM_THREADS; i++)
+        pthread_join(tid[i], NULL);
 
-    /* Desaloca variaveis e termina */
+    printf("--LOG: FIM\n");
+
     pthread_mutex_destroy(&mutex);
     pthread_cond_destroy(&cond);
 }
