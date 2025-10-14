@@ -1,0 +1,273 @@
+--LOG: Iniciando com N=100, M=10, Consumidores=4
+--LOG: Produtor insere TODOS os M elementos de uma vez
+--LOG: Consumidores retiram um por vez
+--LOG: Thread produtora iniciada
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 1 na posicao 0
+--LOG: Produtor inseriu 2 na posicao 1
+--LOG: Produtor inseriu 3 na posicao 2
+--LOG: Produtor inseriu 4 na posicao 3
+--LOG: Produtor inseriu 5 na posicao 4
+--LOG: Produtor inseriu 6 na posicao 5
+--LOG: Produtor inseriu 7 na posicao 6
+--LOG: Produtor inseriu 8 na posicao 7
+--LOG: Produtor inseriu 9 na posicao 8
+--LOG: Produtor inseriu 10 na posicao 9
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 10/100)
+--LOG: Thread consumidora 0 iniciada
+--LOG: Consumidor 0 retirou 1 da posicao 0 (item total 1/100, item local 1)
+--LOG: Consumidor 0 retirou 2 da posicao 1 (item total 2/100, item local 2)
+--LOG: Consumidor 0 encontrou primo: 2 (total: 1)
+--LOG: Consumidor 0 retirou 3 da posicao 2 (item total 3/100, item local 3)
+--LOG: Consumidor 0 encontrou primo: 3 (total: 2)
+--LOG: Consumidor 0 retirou 4 da posicao 3 (item total 4/100, item local 4)
+--LOG: Consumidor 0 retirou 5 da posicao 4 (item total 5/100, item local 5)
+--LOG: Consumidor 0 encontrou primo: 5 (total: 3)
+--LOG: Consumidor 0 retirou 6 da posicao 5 (item total 6/100, item local 6)
+--LOG: Consumidor 0 retirou 7 da posicao 6 (item total 7/100, item local 7)
+--LOG: Consumidor 0 encontrou primo: 7 (total: 4)
+--LOG: Consumidor 0 retirou 8 da posicao 7 (item total 8/100, item local 8)
+--LOG: Consumidor 0 retirou 9 da posicao 8 (item total 9/100, item local 9)
+--LOG: Consumidor 0 retirou 10 da posicao 9 (item total 10/100, item local 10)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Thread consumidora 2 iniciada
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 11 na posicao 0
+--LOG: Produtor inseriu 12 na posicao 1
+--LOG: Produtor inseriu 13 na posicao 2
+--LOG: Produtor inseriu 14 na posicao 3
+--LOG: Produtor inseriu 15 na posicao 4
+--LOG: Produtor inseriu 16 na posicao 5
+--LOG: Produtor inseriu 17 na posicao 6
+--LOG: Produtor inseriu 18 na posicao 7
+--LOG: Produtor inseriu 19 na posicao 8
+--LOG: Produtor inseriu 20 na posicao 9
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 20/100)
+--LOG: Thread consumidora 3 iniciada
+--LOG: Consumidor 3 retirou 11 da posicao 0 (item total 13/100, item local 1)
+--LOG: Consumidor 3 encontrou primo: 11 (total: 1)
+--LOG: Consumidor 3 retirou 12 da posicao 1 (item total 14/100, item local 2)
+--LOG: Consumidor 3 retirou 13 da posicao 2 (item total 15/100, item local 3)
+--LOG: Consumidor 3 encontrou primo: 13 (total: 2)
+--LOG: Consumidor 3 retirou 14 da posicao 3 (item total 16/100, item local 4)
+--LOG: Consumidor 3 retirou 15 da posicao 4 (item total 17/100, item local 5)
+--LOG: Consumidor 3 retirou 16 da posicao 5 (item total 18/100, item local 6)
+--LOG: Consumidor 3 retirou 17 da posicao 6 (item total 19/100, item local 7)
+--LOG: Consumidor 3 encontrou primo: 17 (total: 3)
+--LOG: Consumidor 3 retirou 18 da posicao 7 (item total 20/100, item local 8)
+--LOG: Consumidor 3 retirou 19 da posicao 8 (item total 21/100, item local 9)
+--LOG: Consumidor 3 encontrou primo: 19 (total: 4)
+--LOG: Consumidor 3 retirou 20 da posicao 9 (item total 22/100, item local 10)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Thread consumidora 1 iniciada
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 21 na posicao 0
+--LOG: Produtor inseriu 22 na posicao 1
+--LOG: Produtor inseriu 23 na posicao 2
+--LOG: Produtor inseriu 24 na posicao 3
+--LOG: Produtor inseriu 25 na posicao 4
+--LOG: Produtor inseriu 26 na posicao 5
+--LOG: Produtor inseriu 27 na posicao 6
+--LOG: Produtor inseriu 28 na posicao 7
+--LOG: Produtor inseriu 29 na posicao 8
+--LOG: Produtor inseriu 30 na posicao 9
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 30/100)
+--LOG: Consumidor 3 retirou 21 da posicao 0 (item total 23/100, item local 11)
+--LOG: Consumidor 3 retirou 22 da posicao 1 (item total 25/100, item local 12)
+--LOG: Consumidor 3 retirou 23 da posicao 2 (item total 26/100, item local 13)
+--LOG: Consumidor 3 encontrou primo: 23 (total: 5)
+--LOG: Consumidor 3 retirou 24 da posicao 3 (item total 27/100, item local 14)
+--LOG: Consumidor 3 retirou 25 da posicao 4 (item total 28/100, item local 15)
+--LOG: Consumidor 3 retirou 26 da posicao 5 (item total 29/100, item local 16)
+--LOG: Consumidor 3 retirou 27 da posicao 6 (item total 30/100, item local 17)
+--LOG: Consumidor 0 retirou 28 da posicao 7 (item total 11/100, item local 11)
+--LOG: Consumidor 2 retirou 29 da posicao 8 (item total 12/100, item local 1)
+--LOG: Consumidor 2 encontrou primo: 29 (total: 1)
+--LOG: Consumidor 1 retirou 30 da posicao 9 (item total 24/100, item local 1)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 31 na posicao 0
+--LOG: Produtor inseriu 32 na posicao 1
+--LOG: Produtor inseriu 33 na posicao 2
+--LOG: Produtor inseriu 34 na posicao 3
+--LOG: Produtor inseriu 35 na posicao 4
+--LOG: Produtor inseriu 36 na posicao 5
+--LOG: Produtor inseriu 37 na posicao 6
+--LOG: Produtor inseriu 38 na posicao 7
+--LOG: Produtor inseriu 39 na posicao 8
+--LOG: Produtor inseriu 40 na posicao 9
+--LOG: Consumidor 3 retirou 31 da posicao 0 (item total 31/100, item local 18)
+--LOG: Consumidor 3 encontrou primo: 31 (total: 6)
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 40/100)
+--LOG: Consumidor 3 retirou 32 da posicao 1 (item total 35/100, item local 19)
+--LOG: Consumidor 3 retirou 33 da posicao 2 (item total 36/100, item local 20)
+--LOG: Consumidor 3 retirou 34 da posicao 3 (item total 37/100, item local 21)
+--LOG: Consumidor 3 retirou 35 da posicao 4 (item total 38/100, item local 22)
+--LOG: Consumidor 3 retirou 36 da posicao 5 (item total 39/100, item local 23)
+--LOG: Consumidor 3 retirou 37 da posicao 6 (item total 40/100, item local 24)
+--LOG: Consumidor 3 encontrou primo: 37 (total: 7)
+--LOG: Consumidor 3 retirou 38 da posicao 7 (item total 41/100, item local 25)
+--LOG: Consumidor 3 retirou 39 da posicao 8 (item total 42/100, item local 26)
+--LOG: Consumidor 0 retirou 40 da posicao 9 (item total 32/100, item local 12)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 41 na posicao 0
+--LOG: Produtor inseriu 42 na posicao 1
+--LOG: Produtor inseriu 43 na posicao 2
+--LOG: Produtor inseriu 44 na posicao 3
+--LOG: Produtor inseriu 45 na posicao 4
+--LOG: Produtor inseriu 46 na posicao 5
+--LOG: Produtor inseriu 47 na posicao 6
+--LOG: Produtor inseriu 48 na posicao 7
+--LOG: Produtor inseriu 49 na posicao 8
+--LOG: Produtor inseriu 50 na posicao 9
+--LOG: Consumidor 3 retirou 41 da posicao 0 (item total 43/100, item local 27)
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 50/100)
+--LOG: Consumidor 0 retirou 42 da posicao 1 (item total 44/100, item local 13)
+--LOG: Consumidor 0 retirou 43 da posicao 2 (item total 45/100, item local 14)
+--LOG: Consumidor 0 encontrou primo: 43 (total: 5)
+--LOG: Consumidor 0 retirou 44 da posicao 3 (item total 46/100, item local 15)
+--LOG: Consumidor 0 retirou 45 da posicao 4 (item total 47/100, item local 16)
+--LOG: Consumidor 0 retirou 46 da posicao 5 (item total 48/100, item local 17)
+--LOG: Consumidor 0 retirou 47 da posicao 6 (item total 49/100, item local 18)
+--LOG: Consumidor 0 encontrou primo: 47 (total: 6)
+--LOG: Consumidor 0 retirou 48 da posicao 7 (item total 50/100, item local 19)
+--LOG: Consumidor 0 retirou 49 da posicao 8 (item total 51/100, item local 20)
+--LOG: Consumidor 3 encontrou primo: 41 (total: 8)
+--LOG: Consumidor 0 retirou 50 da posicao 9 (item total 52/100, item local 21)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 51 na posicao 0
+--LOG: Produtor inseriu 52 na posicao 1
+--LOG: Produtor inseriu 53 na posicao 2
+--LOG: Produtor inseriu 54 na posicao 3
+--LOG: Produtor inseriu 55 na posicao 4
+--LOG: Produtor inseriu 56 na posicao 5
+--LOG: Produtor inseriu 57 na posicao 6
+--LOG: Produtor inseriu 58 na posicao 7
+--LOG: Produtor inseriu 59 na posicao 8
+--LOG: Produtor inseriu 60 na posicao 9
+--LOG: Consumidor 3 retirou 51 da posicao 0 (item total 53/100, item local 28)
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 60/100)
+--LOG: Consumidor 3 retirou 52 da posicao 1 (item total 55/100, item local 29)
+--LOG: Consumidor 3 retirou 53 da posicao 2 (item total 56/100, item local 30)
+--LOG: Consumidor 3 encontrou primo: 53 (total: 9)
+--LOG: Consumidor 3 retirou 54 da posicao 3 (item total 57/100, item local 31)
+--LOG: Consumidor 3 retirou 55 da posicao 4 (item total 58/100, item local 32)
+--LOG: Consumidor 0 retirou 56 da posicao 5 (item total 54/100, item local 22)
+--LOG: Consumidor 0 retirou 57 da posicao 6 (item total 60/100, item local 23)
+--LOG: Consumidor 0 retirou 58 da posicao 7 (item total 61/100, item local 24)
+--LOG: Consumidor 0 retirou 59 da posicao 8 (item total 62/100, item local 25)
+--LOG: Consumidor 0 encontrou primo: 59 (total: 7)
+--LOG: Consumidor 3 retirou 60 da posicao 9 (item total 59/100, item local 33)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 61 na posicao 0
+--LOG: Produtor inseriu 62 na posicao 1
+--LOG: Produtor inseriu 63 na posicao 2
+--LOG: Produtor inseriu 64 na posicao 3
+--LOG: Produtor inseriu 65 na posicao 4
+--LOG: Produtor inseriu 66 na posicao 5
+--LOG: Produtor inseriu 67 na posicao 6
+--LOG: Produtor inseriu 68 na posicao 7
+--LOG: Produtor inseriu 69 na posicao 8
+--LOG: Produtor inseriu 70 na posicao 9
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 70/100)
+--LOG: Consumidor 0 retirou 61 da posicao 0 (item total 63/100, item local 26)
+--LOG: Consumidor 0 encontrou primo: 61 (total: 8)
+--LOG: Consumidor 0 retirou 62 da posicao 1 (item total 65/100, item local 27)
+--LOG: Consumidor 0 retirou 63 da posicao 2 (item total 66/100, item local 28)
+--LOG: Consumidor 0 retirou 64 da posicao 3 (item total 67/100, item local 29)
+--LOG: Consumidor 0 retirou 65 da posicao 4 (item total 68/100, item local 30)
+--LOG: Consumidor 3 retirou 66 da posicao 5 (item total 64/100, item local 34)
+--LOG: Consumidor 0 retirou 67 da posicao 6 (item total 69/100, item local 31)
+--LOG: Consumidor 0 encontrou primo: 67 (total: 9)
+--LOG: Consumidor 0 retirou 68 da posicao 7 (item total 71/100, item local 32)
+--LOG: Consumidor 0 retirou 69 da posicao 8 (item total 72/100, item local 33)
+--LOG: Consumidor 3 retirou 70 da posicao 9 (item total 70/100, item local 35)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 71 na posicao 0
+--LOG: Produtor inseriu 72 na posicao 1
+--LOG: Produtor inseriu 73 na posicao 2
+--LOG: Produtor inseriu 74 na posicao 3
+--LOG: Produtor inseriu 75 na posicao 4
+--LOG: Produtor inseriu 76 na posicao 5
+--LOG: Produtor inseriu 77 na posicao 6
+--LOG: Produtor inseriu 78 na posicao 7
+--LOG: Produtor inseriu 79 na posicao 8
+--LOG: Produtor inseriu 80 na posicao 9
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 80/100)
+--LOG: Consumidor 0 retirou 71 da posicao 0 (item total 73/100, item local 34)
+--LOG: Consumidor 0 encontrou primo: 71 (total: 10)
+--LOG: Consumidor 0 retirou 72 da posicao 1 (item total 75/100, item local 35)
+--LOG: Consumidor 0 retirou 73 da posicao 2 (item total 76/100, item local 36)
+--LOG: Consumidor 0 encontrou primo: 73 (total: 11)
+--LOG: Consumidor 0 retirou 74 da posicao 3 (item total 77/100, item local 37)
+--LOG: Consumidor 0 retirou 75 da posicao 4 (item total 78/100, item local 38)
+--LOG: Consumidor 0 retirou 76 da posicao 5 (item total 79/100, item local 39)
+--LOG: Consumidor 0 retirou 77 da posicao 6 (item total 80/100, item local 40)
+--LOG: Consumidor 0 retirou 78 da posicao 7 (item total 81/100, item local 41)
+--LOG: Consumidor 0 retirou 79 da posicao 8 (item total 82/100, item local 42)
+--LOG: Consumidor 0 encontrou primo: 79 (total: 12)
+--LOG: Consumidor 3 retirou 80 da posicao 9 (item total 74/100, item local 36)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 81 na posicao 0
+--LOG: Produtor inseriu 82 na posicao 1
+--LOG: Produtor inseriu 83 na posicao 2
+--LOG: Produtor inseriu 84 na posicao 3
+--LOG: Produtor inseriu 85 na posicao 4
+--LOG: Produtor inseriu 86 na posicao 5
+--LOG: Produtor inseriu 87 na posicao 6
+--LOG: Produtor inseriu 88 na posicao 7
+--LOG: Produtor inseriu 89 na posicao 8
+--LOG: Produtor inseriu 90 na posicao 9
+--LOG: Consumidor 0 retirou 81 da posicao 0 (item total 83/100, item local 43)
+--LOG: Consumidor 0 retirou 82 da posicao 1 (item total 85/100, item local 44)
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 90/100)
+--LOG: Consumidor 3 retirou 83 da posicao 2 (item total 84/100, item local 37)
+--LOG: Consumidor 3 encontrou primo: 83 (total: 10)
+--LOG: Consumidor 3 retirou 84 da posicao 3 (item total 87/100, item local 38)
+--LOG: Consumidor 3 retirou 85 da posicao 4 (item total 88/100, item local 39)
+--LOG: Consumidor 3 retirou 86 da posicao 5 (item total 89/100, item local 40)
+--LOG: Consumidor 3 retirou 87 da posicao 6 (item total 90/100, item local 41)
+--LOG: Consumidor 3 retirou 88 da posicao 7 (item total 91/100, item local 42)
+--LOG: Consumidor 3 retirou 89 da posicao 8 (item total 92/100, item local 43)
+--LOG: Consumidor 3 encontrou primo: 89 (total: 11)
+--LOG: Consumidor 0 retirou 90 da posicao 9 (item total 86/100, item local 45)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Produtor vai inserir 10 elementos de uma vez
+--LOG: Produtor inseriu 91 na posicao 0
+--LOG: Produtor inseriu 92 na posicao 1
+--LOG: Produtor inseriu 93 na posicao 2
+--LOG: Produtor inseriu 94 na posicao 3
+--LOG: Produtor inseriu 95 na posicao 4
+--LOG: Produtor inseriu 96 na posicao 5
+--LOG: Produtor inseriu 97 na posicao 6
+--LOG: Produtor inseriu 98 na posicao 7
+--LOG: Produtor inseriu 99 na posicao 8
+--LOG: Produtor inseriu 100 na posicao 9
+--LOG: Consumidor 3 retirou 91 da posicao 0 (item total 93/100, item local 44)
+--LOG: Consumidor 3 retirou 92 da posicao 1 (item total 95/100, item local 45)
+--LOG: Consumidor 3 retirou 93 da posicao 2 (item total 96/100, item local 46)
+--LOG: Consumidor 3 retirou 94 da posicao 3 (item total 97/100, item local 47)
+--LOG: Consumidor 3 retirou 95 da posicao 4 (item total 98/100, item local 48)
+--LOG: Produtor inseriu total de 10 elementos (ja produziu 100/100)
+--LOG: Consumidor 0 retirou 96 da posicao 5 (item total 94/100, item local 46)
+--LOG: Consumidor 0 retirou 97 da posicao 6 (item total 100/100, item local 47)
+--LOG: Consumidor 0 encontrou primo: 97 (total: 13)
+--LOG: Thread consumidora 0 finalizou com 13 primos
+--LOG: Thread produtora finalizou
+--LOG: Consumidor 3 retirou 98 da posicao 7 (item total 99/100, item local 49)
+--LOG: Thread consumidora 3 finalizou com 11 primos
+--LOG: Consumidor 1 retirou 99 da posicao 8 (item total 34/100, item local 2)
+--LOG: Thread consumidora 1 finalizou com 0 primos
+--LOG: Consumidor 2 retirou 100 da posicao 9 (item total 33/100, item local 2)
+--LOG: Buffer esvaziado, liberando produtor
+--LOG: Thread consumidora 2 finalizou com 1 primos
+
+=== RESULTADOS ===
+--OUT: Total de numeros primos encontrados: 25
+--OUT: Thread consumidora VENCEDORA: 0 (encontrou 13 primos)
+--LOG: Programa finalizado com sucesso
