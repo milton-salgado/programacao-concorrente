@@ -1,0 +1,3 @@
+Numero de tarefas: 10
+Contando primos de 1 a 100...
+Quantidade de numeros primos no intervalo [1, 100]: 25

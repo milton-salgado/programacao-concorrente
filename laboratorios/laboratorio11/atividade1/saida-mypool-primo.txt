@@ -1,0 +1,26 @@
+6 nao eh primo
+1 nao eh primo
+3 eh primo
+4 nao eh primo
+8 nao eh primo
+0 nao eh primo
+2 eh primo
+16 nao eh primo
+9 nao eh primo
+5 eh primo
+7 eh primo
+10 nao eh primo
+11 eh primo
+22 nao eh primo
+23 eh primo
+12 nao eh primo
+13 eh primo
+14 nao eh primo
+15 nao eh primo
+17 eh primo
+18 nao eh primo
+19 eh primo
+20 nao eh primo
+21 nao eh primo
+24 nao eh primo
+Terminou
